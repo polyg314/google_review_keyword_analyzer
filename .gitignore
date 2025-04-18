@@ -1,4 +1,6 @@
 venv
+.env
+secrets.toml
 
 
 # Byte-compiled / optimized / DLL files

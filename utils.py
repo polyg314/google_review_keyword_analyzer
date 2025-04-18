@@ -3,10 +3,11 @@ import os
 import re
 import requests
 from urllib.parse import unquote
-from dotenv import load_dotenv
+import streamlit as st
 
-load_dotenv()
-serpapi_key = os.getenv("SERPAPI_KEY")
+serpapi_key = st.secrets["serpapi_key"]
+
+
 
 def extract_data_id_from_url(url: str) -> str:
     """
